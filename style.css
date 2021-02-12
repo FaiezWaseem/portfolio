@@ -305,8 +305,10 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
     background-color: #36d1d6;
     border: 3px solid #fff;
     
-
   }
+.card:hover{
+transform: translateX(1.1);    
+}
   .card .details {
 
     text-align: justify;
