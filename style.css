@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #252627;
+}
+/*Nav bar designing*/
+header{
+    width: 100%;
+    background-color: #181818;
+    padding: 10px;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.nav .list-item{
+    display: flex;
+    list-style: none;
+}
+.nav .list-item a{
+text-decoration: none;
+padding: 20px;
+color: #707070;
+animation: all .5s ease;
+}
+.nav .bname {
+    margin-left: 20px;
+}
+.nav .bname h1{
+    color: #707070;
+}
+.nav .list-item a:hover{
+    color: #ED5565;
+}
+.nav .list-item li:hover{
+  padding-bottom: 10px;
+    border-bottom:2px solid #ED5565;
+}
+
+/* About Me intro */
+/* Text Changer*/
+.text-change::before{
+    content:'';
+    color:#48CFAD;
+    animation: animate infinite 8s;
+}
+
+@keyframes animate{
+    
+    0%{
+    content:'Youtuber';
+    }
+    50%{
+   content:'WebDesigner';
+    }
+    100%{
+    content:'UI/UX Dev';
+    }
+}
+.content-about{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+height: 600px;
+margin-bottom: 30px;
+
+}
+.content-about .text{
+padding: 50px;
+font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: space-around;
+    /*border: 1px solid maroon;*/
+   
+}
+.content-about .text .extra .name{
+    display: flex;
+    align-items: center;
+    color: #ED5565;
+}
+.content-about .text h6{
+    color: #707070;
+}
+.content-about .text h2{
+    padding: 10px 0px;
+
+}
+.content-about .img img {
+width: 600px;
+height: 550px;
+    }
+.content-about .text a {
+        padding: 12px 25px;
+        background-color: none;
+        border: 3px solid #ED5565;
+        color: #ED5565;
+        font-size: .8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        top: 80px;
+        overflow: hidden;
+        transition: .5s;
+        display: inline-block;
+        text-decoration: none;
+        width: 165px;
+    }
+    
+    .content-about .text a:hover {
+        color: #fff;
+    }
+    
+    .content-about .text a::before {
+        content: '';
+        background-color: #ED5565;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0%;
+        z-index: -1;
+        transition: .5s;
+    }
+    
+.content-about .text a:hover::before {
+        height: 100%;   
+    }
+
+    /* About me */
+.contact-me{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin: 80px 0px;
+
+} 
+.contact-me h1{
+    position: relative;
+    left: -50px;
+z-index: 0;
+font-size: 7.8rem;
+opacity: .1;
+color: #707070;
+}
+.contact-me .box{
+    border-radius: 8px;
+    max-width: 900px;
+    background-color: #252627;
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    position: relative;
+    color: white;
+    z-index: 1;
+    transform: translateX(50px);
+}
+.contact-me .box p{
+text-align: center;
+line-height: 28px;
+}
+.contact-me .box .p2{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 28px;
+    }
+/* Skils Coloumn*/
+.skills{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+}
+.skills h2{
+position: relative;
+z-index: 0;
+font-size: 7.8rem;
+opacity: .1;
+color: #707070;
+left: 50px;
+}
+.skills p{
+    position: relative;
+    left: 50px;
+}
+
+.skills .skill-section{
+margin: 20px 0px;
+}
+.skills .skill-section .box{
+    border-radius: 8px;
+    max-width: 900px;
+    background-color: #252627;
+    box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
+    padding: 50px;
+    width: 80vw;
+    display: flex;
+   justify-content: space-between;
+width: auto;
+}
+.skills .skill-section .box .progressbar{
+    margin: 20px 100px;
+width: 600px;
+border-radius: 10px 10px;
+height: 20px;
+border: 2px solid #48CFAD;
+}
+.skills .skill-section .box .tag-css{
+    margin-left:50px ;
+    position: relative;
+    top: 1.1em;
+}
+.bar-css1{
+    background-color:  #48CFAD;
+width: 450px;
+border-radius: 10px 10px;
+color:  #48CFAD;
+position: relative;
+right: 1px;
+top: -1px;
+}
+.bar-css2{
+    background-color:  #48CFAD;
+width: 400px;
+border-radius: 10px 10px;
+color:  #48CFAD;
+position: relative;
+right: 1px;
+top: -1px;
+}
+.bar-css3{
+    background-color:  #48CFAD;
+width: 340px;
+border-radius: 10px 10px;
+color:  #48CFAD;
+position: relative;
+right: 1px;
+top: -1px;
+}
+
+
+/* Services Section*/
+.service-hd h1{
+    
+    position: relative;
+    z-index: 0;
+    font-size: 7.8rem;
+    opacity: .1;
+    color: #707070;
+    left: 50px;
+}
+.service{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    margin: 50px 0px 100px 0px;
+}
+
+.card {
+    margin: 50px 0px;
+width: 300px;
+ height: 300px;
+ padding: 10px;
+ display: flex;
+flex-direction: column;
+ flex-wrap: wrap;
+ align-items: center;
+position: relative;
+ color: #fff;
+background: rgba( 255, 255, 255, 0.10 );
+box-shadow: 0 3px 5px 0 rgba(167, 168, 174, 0.483);
+backdrop-filter: blur( 20.0px );
+-webkit-backdrop-filter: blur( 20.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
+  }
+
+  .card .avatar-img .icon{
+      position: relative;
+      top: -65%;
+    color:  #36d1d6;
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 3px solid #36d1d6;
+  }
+  .card .avatar-img .icon:hover{
+    color:  #fff;
+    background-color: #36d1d6;
+    border: 3px solid #fff;
+    
+
+  }
+  .card .details {
+
+    text-align: justify;
+    text-align-last: center;
+  }
+  .card .details h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 1000;
+  }
+
+
+
+/* Copyright*/
+footer{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #707070;
+    padding: 20px;
+    color: #707070;
+}
