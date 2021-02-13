@@ -283,7 +283,11 @@ backdrop-filter: blur( 20.0px );
 -webkit-backdrop-filter: blur( 20.0px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
+<<<<<<< HEAD
 animation: transform 0.5s;
+=======
+    animation: transform 0.5s;
+>>>>>>> f9bd8c1db12b3aac8eaa496f7f5dd40f93ba945e
  
   }
 
@@ -301,15 +305,23 @@ animation: transform 0.5s;
     border-radius: 50%;
     border: 3px solid #36d1d6;
   }
-  .card .avatar-img .icon:hover{
+  .card:hover .avatar-img .icon{
     color:  #fff;
     background-color: #36d1d6;
     border: 3px solid #fff;
+<<<<<<< HEAD
 
   }
   .card:hover{
       transform: scale(1.045);
   }
+=======
+    
+  }
+.card:hover{
+      transform: scale(1.045); 
+}
+>>>>>>> f9bd8c1db12b3aac8eaa496f7f5dd40f93ba945e
   .card .details {
 
     text-align: justify;
